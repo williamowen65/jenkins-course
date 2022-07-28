@@ -28,7 +28,7 @@ node {
       println('hey')
       println(content)
 
-      emailext(body: 'test message', mimeType: 'text/html',
+      emailext(body: 'test message',
          replyTo: '$DEFAULT_REPLYTO', subject: 'subject',
          to: 'islandhopper152@gmail.com', attachLog: true )
     }
