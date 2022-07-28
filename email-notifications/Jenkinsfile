@@ -28,9 +28,9 @@ node {
       println('hey')
       println(content)
 
-      emailext(body: content, mimeType: 'text/html',
-         replyTo: '$DEFAULT_REPLYTO', subject: subject,
-         to: to, attachLog: true )
+      emailext(body: 'test message', mimeType: 'text/html',
+         replyTo: '$DEFAULT_REPLYTO', subject: 'subject',
+         to: 'islandhopper152@gmail.com', attachLog: true )
     }
 
     // mark current build as a failure and throw the error
